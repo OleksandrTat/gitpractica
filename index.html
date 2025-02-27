@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Світлиця майстра</title>
+    <link rel="icon" href="img/LOGO.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <script src="js/main.js"></script>
+    <!-- <script src="js/idiomas.js"></script> -->
+</head>
+<body>
+
+  <!-- Coockies -->
+  <div class="cookies-popup" id="cookiesPopup">
+    <p>Ми використовуємо файли cookie, щоб покращити ваш досвід. Продовжуючи перегляд сайту, ви погоджуєтеся з нашими <a href="Help/Coockies.html" target="_blank" style="color: #0066cc; text-decoration: none;">Cookies Policy</a>.</p>
+    <button onclick="acceptCookies()">Прийняти</button>
+  </div>
+
+
+  <!-- Сніг -->
+  <div id="snowflakes"></div> 
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top navbarTop navbarcss ubuntu-medium">
+    <div class="container-fluid navbarcss">
+        <!-- Лого з посиланням на верх сторінки -->
+        <a href="#principio" class="logo-link">
+          <img src="img/LOGO.png" alt="Лого" width="30" height="30">
+        </a>
+        <a href="#principio" class="logo-link">
+            <img src="img/textSinBG.png" alt="Текст логотипу" class="textlogo" height="30">
+        </a>
+      
+        
+        <!-- Кнопка для мобільної версії -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Меню -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto navItem">
+              <li class="nav-item navItem">
+                <a id="aboutLink" class="nav-link" href="#about-us">Про нас</a>
+              </li>
+              <li class="nav-item navItem">
+                  <a id="showcaseLink" class="nav-link" href="#comprar">Вітрина</a>
+              </li>
+              <li class="nav-item navItem">
+                  <a id="whyUsLink" class="nav-link" href="#diferencia">Чому ми</a>
+              </li>
+              <li class="nav-item navItem">
+                  <a id="historyLink" class="nav-link" href="#history">Історія</a>
+              </li>
+              <li class="nav-item navItem">
+                  <a id="contactsLink" class="nav-link" href="#contacts">Контакти</a>
+              </li>
+                <li class="nav-item dropdown navItem">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-globe2"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" style="margin-right: 0px !important;">
+                        <li><a class="dropdown-item dropdown-item-active">Українська</a></li>
+                        <li><a class="dropdown-item" onclick="location.href='index_es.html'">Español</a></li>
+                        <li><a class="dropdown-item" onclick="location.href='index_en.html'">English</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <!-- Елемети на початку -->
+  <div>
+          
+        <div class="mainbg"></div>
+          <h2 class="ubuntu-bold texto-principal" data-parallax-layer="4">Ми з гордістю продовжуємо справу своїх <span class="darkbrown">дідів-прадідів.</span> </h2>
+          <h6 class="ubuntu-medium texto-principalmas" data-parallax-layer="4">Використовуючи сучасні технології обробки деревини. Покладаємось на свій власний досвід роботи та проектуємо нові вироби.<br><br>Велику частину продукції ми виготовляємо на замовлення – тому індивідуальний підхід є ключовим фактором вдалих взаємин із клієнтами. З огляду на побажання замовників, ми створюємо дійсно <span class="darkbrown">якісні, сучасні і практичні меблі.</span></h6>
+          <div class="VV" data-parallax-layer="1">
+              <div class="leftVleft stripe"></div>
+              <div class="leftVright stripe"></div>
+
+              <div class="rightVleft stripe"></div>
+              <div class="rightVright stripe"></div>
+          </div>
+          <a href="#about-us" data-parallax-layer="3">
+            <button type="button" class="ubuntu-bold btn btn-outline-light btn-lg btnPrincipal">Детальніше</button>
+          </a>
+
+          <img src="img/img principales.png" class="imgPrincimales" data-parallax-layer="2">
+          <div class="VVbg"></div>
+
+          
+          <div class="mainseparador"></div>
+  </div>    
+
+  <!-- Про нас -->
+  <div class="container aboutUs my-5 hidden" id="about-us">
+      <div class="row align-items-center offset-2">
+        <!-- Блок із зображенням -->
+        <div class="col-12 col-md-4 text-center d-flex justify-content-center">
+          <img src="img/aboutUs.png" class="img-fluid rounded" alt="Про нас" style="height: 100%; max-height: 350px; object-fit: cover;">
+        </div>
+        
+        <!-- Блок із текстом -->
+        <div class="col-12 col-md-6">
+          <h2 class="AboutUsH2 lxgw-wenkai-tc-regular fs-1 text-end mb-3">Про нас</h2>
+          <div class="AboutUsSeparador mb-4"></div>
+          <p class="fs-6 AboutUsPTop lxgw-wenkai-tc-regular mb-4">
+            Ми розробляємо і реалізуємо унікальні проекти сучасних меблів, які мають широкий спектр застосування для дому та бізнесу.
+            <br><br>
+            Серйозний підхід, кваліфіковані майстри, автоматизоване виробництво, дозволяє виготовляти якісні, елітні меблі від економ до преміум класу. 
+            Корпусні меблі виготовляються тільки за індивідуальними ескізами, що робить її на 100% ексклюзивними.
+            </p>
+        </div>
+        <p class="fs-6 AboutUsPBottom lxgw-wenkai-tc-regular text-center col-md-10">
+          За своє існування ми отримали багато позитивних рекомендацій від наших клієнтів і не збираємося зупинятися на досягнутому результаті. 
+          Продукція відповідає необхідним стандартам. Здійснюємо співпрацю з відомими виробниками високоякісних комплектуючих.
+        </p>
+      </div>
+  </div>
+
+  <!-- Вітрина -->
+  <div>
+      <div>
+        <img class="bgComprar hidden" id="comprar" src="img/bgComprar.png" alt="Наша вітрина" >
+        <button type="button" class="btn btn-outline-secondary btnComprar ubuntu-medium hidden" onclick="window.open('idiomas/ua/Chose.html', '_self');">Наша вітрина</button>
+      </div>
+
+      <div class="image-container">
+        <a href="idiomas/ua/door.html" class="image-box hidden" target="_self">
+          <img src="img/puertas.png" alt="Двері">
+          <div class="overlay">
+            <span>Двері</span>
+          </div>
+        </a>
+        <a href="idiomas/ua/muebles.html" class="image-box hidden" target="_self">
+          <img src="img/muebles.png" alt="Меблі">
+          <div class="overlay">
+            <span>Меблі</span>
+          </div>
+        </a>
+        <a href="idiomas/ua/gardin.html" class="image-box hidden" target="_self">
+          <img src="img/gardin.png" alt="Сад">
+          <div class="overlay">
+            <span>Сад</span>
+          </div>
+        </a>
+        <a href="idiomas/ua/camas.html" class="image-box hidden" target="_self">
+          <img src="img/Camas.png" alt="Ліжка">
+          <div class="overlay">
+            <span>Ліжка</span>
+          </div>
+        </a>
+        <a href="idiomas/ua/cocinas.html" class="image-box hidden" target="_self">
+          <img src="img/Cocinas.png" alt="Кухні">
+          <div class="overlay">
+            <span>Кухні</span>
+          </div>
+        </a>
+      </div>
+      
+      
+  </div>
+
+  <!-- Чим ми відрізняємось -->
+  <div class="diferencia">
+      <img src="img/WhyWeAreDifferent/TopWave.png" class="diferenciaTopWave">
+      <div class="bg">
+        <div class="container" id="diferencia">
+          <div class="row hidden">
+            <!-- Блок із текстом -->
+          <div class="col-12 col-md-5 offset-2">
+            <h2 class="diferenciaH2 lxgw-wenkai-tc-regular fs-1 text-start mb-3">Чим ми відрізняємося</h2>
+            <div class="differenciaSeparador mb-4"></div>
+            <p class="fs-6 differenceP lxgw-wenkai-tc-regular mb-4">
+              "Світлиця Майстра" – ваш партнер у створенні дерев'яних меблів та дверей! Ми розробляємо надійні, довговічні вироби, які гармонійно поєднують стиль і функціональність, створюючи затишок у вашому просторі.<br><br>Наші переваги – це доступні ціни, швидка та надійна доставка, якісні матеріали й оперативність виконання замовлень. Обираючи "Світлицю Майстра", ви отримуєте не просто вироби, а справжню майстерність, яка служитиме вам довгі роки!
+            </p>
+          </div>
+  
+            <!-- Блок із зображенням -->
+          <div class="col-12 col-md-4 text-center d-flex justify-content-center">
+            <img src="img/WhyWeAreDifferent/mainimg.png" class="img-fluid" alt="Чим ми відрізняємося" style="height: 100%; max-height: 350px; object-fit: cover;">
+          </div>
+          </div>
+        </div>
+      </div>
+      <img src="img/WhyWeAreDifferent/BottomWave.png" class="diferenciaBottomWave">
+  </div>
+
+  <!-- Історія -->
+  <div class="position-relative" style="top: -10vh;">
+    <!-- Перший блок -->
+    <div class="row align-items-center offset-3 hidden" id="history">
+      <!-- Блок із зображенням -->
+      <div class="col-12 col-md-4 text-center d-flex" style="margin-left: -2em;">
+        <img src="img/Historia/mainImg1.png" class="img-fluid rounded" alt="Про нас" style="height: 100%; max-height: 350px; object-fit: cover;">
+      </div>
+      
+      <!-- Блок із текстом -->
+      <div class="col-12 col-md-5">
+        <h2 class="HistoriaH2 lxgw-wenkai-tc-regular fs-1 text-end mb-3">Наша історія</h2>
+        <div class="HistoriaSeparador mb-4"></div>
+        <p class="fs-6 AboutUsPTop lxgw-wenkai-tc-regular mb-4 text-start">
+          Дерев’яні вироби в Україні відомі із найдавніших часів, особливо поширились на територіях, де деревина була основним матеріалом. З дерева виробляли посуд, знаряддя праці, човни, господарське хатне начиння тощо. Найдавніші способи обробки деревини, що збереглись і до наших днів, – випалювання та видобування.
+          <br><br>
+          Деревина з давніх часів була улюбленим і цінним матеріалом. Вона міцна й пружна, має невелику питому вагу. Барвники, оліфа й лаки надійно захищають дерев’яні вироби від води і водночас посилюють 
+          </p>
+      </div>
+      <p class="fs-6 AboutUsPBottom lxgw-wenkai-tc-regular text-center col-md-8 offset-5">
+        декоративне звучання текстури. Глибоке розуміння й знання властивостей деревини та інших матеріалів в усі часи залишалися незмінною основою народного мистецтва.
+      </p>
+    </div>
+
+    <!-- Другий блок -->
+      <div class="bg hidden" style="margin-top: 2em;">
+        <div class="container" id="diferencia">
+          <div class="row">
+            <!-- Блок із текстом -->
+          <div class="col-12 col-md-4 offset-2" style="margin-right: -2em;">
+            <p class="fs-6 differenceP lxgw-wenkai-tc-regular mb-4">
+              Виробничі цехи нашої фірми, оснащені всім необхідним, сучасним надійним обладнанням, яке дозволяє здійснювати найширший спектр послуг і виготовляти безліч продукції. Використовуємо у виробництві різні породи дерева, ретельно відбираємо та перевіряємо сировину, а потім робимо всі необхідні етапи робіт. Оскільки ми є виробниками, наші ціни вигідно відрізняються від цін інших фірм, які пропонують меблі з натурального дерева. Вироби з дерева одна з основних сфер нашої діяльності, тому ми гарантуємо високу якість кінцевого продукту.
+              </p>
+          </div>
+  
+            <!-- Блок із зображенням -->
+          <div class="col-12 col-md-4 text-center d-flex justify-content-center">
+            <img src="img/Historia/mainImg2.png" class="img-fluid" alt="Чим ми відрізняємося" style="height: 100%; max-height: 350px; object-fit: cover; margin-right: 0m;">
+          </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Сніг -->
+  <div id="snowflakes"></div> 
+
+  
+  <!-- Footer -->
+  <footer class="position-relative">
+    <div class="header">
+
+      <!--Waves Container-->
+      <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(99,77,58,0.7" />
+      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(99,77,58,0.5)" />
+      <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(99,77,58,0.3)" />
+      <use xlink:href="#gentle-wave" x="48" y="7" fill="#634D3A" />
+      </g>
+      </svg>
+      </div>
+      
+      </div>
+
+    <!-- <div class="owl-carousel gallery-carousel">
+      <div class="item">
+          <img src="img/footer/1.jpg" alt="Image 1">
+      </div>
+      <div class="item">
+          <img src="img/footer/2.jpeg" alt="Image 2">
+      </div>
+      <div class="item">
+          <img src="img/footer/3.jpg" alt="Image 3">
+      </div>
+      <div class="item">
+          <img src="img/footer/4.jpg" alt="Image 4">
+      </div>
+      <div class="item">
+          <img src="img/footer/5.jpg" alt="Image 5">
+      </div>
+    </div> -->
+
+    <div class="footerInfo">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-3 mb-3 offset-1">
+            <h5 class="ubuntu-medium" id="contacts">Контакти</h5>
+            <ul class="nav flex-column ">
+              <li class="nav-item mb-2 mt-2"><a href="https://www.google.com/maps/place/Muzey+%22Svitlytsya+Maystra%22/@49.5088589,25.350497,15.88z/data=!4m6!3m5!1s0x473047b833a6eb35:0x420c8db1d557e8f3!8m2!3d49.5133943!4d25.3479571!16s%2Fg%2F11qh1j7_np?entry=ttu&g_ep=EgoyMDI1MDEwNi4xIKXMDSoASAFQAw%3D%3D"  target="_self" rel="noopener noreferrer" class="nav-link p-0 text-body-secondary">ПП Татарин, с.Слобідка,<br>Козівський район, Тернопільська обл.</a></li>
+              <li class="nav-item mb-2 mt-1"><a href="tel:097-159-39-57" target="_self" rel="noopener noreferrer" class="nav-link p-0 text-body-secondary">097-159-39-57 (кухні, спальні, шафи-купе)<br>097-798-30-88 (двері та вікна, садові вироби)</a></li>
+              <li class="nav-item mb-2 mt-1"><a href="tataryntm@ukr.net" target="_self" rel="noopener noreferrer" class="nav-link p-0 text-body-secondary">tataryntm@ukr.net</a></li>
+              <li class="nav-item mb-2 mt-1"><a href="https://www.facebook.com/share/14zAHPHWRw/" target="_self" rel="noopener noreferrer" class="nav-link p-0 text-body-secondary"><i class="bi bi-facebook"></i> Facebook</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5 class="ubuntu-medium">Покликання</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 mt-2"><a href="#about-us" class="nav-link p-0 text-body-secondary">Про нас</a></li>
+              <li class="nav-item mb-2 mt-1"><a href="#comprar" class="nav-link p-0 text-body-secondary">Вітрина</a></li>
+              <li class="nav-item mb-2 mt-1"><a href="#diferencia" class="nav-link p-0 text-body-secondary">Чому ми</a></li>
+              <li class="nav-item mb-2 mt-1"><a href="#history" class="nav-link p-0 text-body-secondary">Історія</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5 class="ubuntu-medium">Help</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 mt-2"><a href="Help/PrivacyPolicy.html" class="nav-link p-0 text-body-secondary">Privacy policy</a></li>
+              <li class="nav-item mb-2 mt-1"><a href="Help/Coockies.html" class="nav-link p-0 text-body-secondary">Cookies</a></li>
+              <li class="nav-item mb-2 mt-1"><a href="Help/TermsСonditions.html" class="nav-link p-0 text-body-secondary">Terms & conditions</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-2 mb-3 e-0" style="margin-left: 4%;">
+            <img src="img/footer/horario.png" alt="">
+          </div>
+        </div>
+    
+        <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+          <div class="separadorFooter align-items-center"></div>
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary" style="margin-left: 5em;">© 2025 Company, Inc</span>
+          </div>
+      
+          <h5 style="margin-right: 6em;">СТВОРИМО КОМФОРТ ЗА НЕПОВТОРНИМ ПРОЄКТОМ</h5>
+        </div>
+
+        
+
+
+
+  </footer>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
